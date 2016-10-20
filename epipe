@@ -1,0 +1,13 @@
+#$!/usr/bin/env bash  -*- mode: sh; -*-
+
+tty="/dev/$(ps -o tty= -p $$)"
+
+temp_file=$(mktemp)
+
+default_editor="emacs"
+
+[ ! -t 0 ] && cat > $temp_file
+
+${EDITOR:-${VISUAL:-$default_editor}} $temp_file <$tty >$tty && cat $temp_file
+
+rm $temp_file
