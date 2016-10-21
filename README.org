@@ -1,0 +1,39 @@
+#+TITLE: epipe
+
+Use your favorite editor in the pipeline, featuring the support for
+=emacsclient=.
+
+This tool enables the use of emacs(client) for interactive editing of the
+output/input of shell commands.
+
+* Usage
+  : command1 | epipe
+  : epipe | command1
+  : command1 | epipe | command2
+
+  Since we're familiar with emacs, this saves us from writing =grep=, =sed=,
+  =awk=, etc., in order to do some text processing on the output/input of shell
+  commands. The use of =epipe= can also replace some other interactive commands,
+  for example, the interactive grep, [[https://github.com/mooz/percol][percol]].
+
+  Example:
+
+
+* References
+  This idea has been implemented in =vipe=, but none of the current
+  implementation supports =emacsclient=.
+
+  - [[https://joeyh.name/code/moreutils/][vipe of moreutils]]: To the best of my knowledge, vipe is first implemented by
+    Joey Hess. But it doesn't support using =emacsclient= as the editor.
+  - [[https://github.com/juliangruber/vipe/][juliangruber/vipe]]: I found this after I wrote the code. This one is similar
+    to epipe since the author also rewrote the original vipe of Joey Hess using
+    shell script. But the problem remains the same -- it doesn't support
+    =emacsclient=.
+
+* Perl Version
+  I also put a modified verion of Joey's =vipe= in this repo: =epipe.pl=. The
+  code of =vipe= is changed a little bit to support =emacsclient=. You can check
+  it out if interested.
+
+* Disclaim
+  Only test =epipe= on Arch Linux.
