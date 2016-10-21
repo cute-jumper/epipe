@@ -11,8 +11,8 @@ output/input of shell commands.
   : epipe | command1
   : command1 | epipe | command2
 
-  Since we're familiar with emacs, this saves us from writing =grep=, =sed=,
-  =awk=, etc., in order to do some text processing on the output/input of shell
+  Since emacs can now be used in the pipeline, =epipe= saves us from writing
+  =grep=, =sed=, =awk=, etc., in order to process the output/input of shell
   commands. The use of =epipe= can also replace some other interactive commands,
   for example, the interactive grep, [[https://github.com/mooz/percol][percol]].
 
