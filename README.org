@@ -16,7 +16,13 @@ output/input of shell commands.
   commands. The use of =epipe= can also replace some other interactive commands,
   for example, the interactive grep, [[https://github.com/mooz/percol][percol]].
 
-  Example:
+  You need to set either =EDITOR= or =VISUAL= environment variable. By default,
+  =epipe= uses =emacs= as the editor. You can set =export EDITOR="emacsclient
+  -ct"= in order to use =emacsclient= as the editor.
+
+  A really simple example:
+  [[./epipe.gif]]
+
 
 
 * References
@@ -35,5 +41,6 @@ output/input of shell commands.
   code of =vipe= is changed a little bit to support =emacsclient=. You can check
   it out if interested.
 
-* Disclaim
-  Only test =epipe= on Arch Linux.
+* Final Notes
+  - Only test =epipe= on Arch Linux.
+  - Can't use with =-a= option of =emacsclient=
