@@ -8,7 +8,6 @@ use File::Temp q{tempfile};
 $/=undef;
 
 my ($tty)=POSIX::ttyname(2);
-printf "tty:%s\n", $tty;
 if (! defined $tty)
 {
     $tty = "/dev/tty";
