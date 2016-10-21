@@ -7,6 +7,10 @@ This tool enables the use of emacs(client) for interactive editing of the
 output/input of shell commands.
 
 * Usage
+  First, set an alias for =epipe=:
+  : alias epipe=/path/to/epipe
+
+  Then you can use =epipe= in one of the following ways:
   : command1 | epipe
   : epipe | command1
   : command1 | epipe | command2
