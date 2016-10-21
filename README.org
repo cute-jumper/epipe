@@ -17,8 +17,8 @@ output/input of shell commands.
   for example, the interactive grep, [[https://github.com/mooz/percol][percol]].
 
   You need to set either =EDITOR= or =VISUAL= environment variable. By default,
-  =epipe= uses =emacs= as the editor. You can set =export EDITOR="emacsclient
-  -ct"= in order to use =emacsclient= as the editor.
+  =epipe= uses =emacs= as the editor. You can set ~export EDITOR="emacsclient
+  -ct"~ in order to use =emacsclient= as the editor.
 
   A really simple example:
   [[./epipe.gif]]
