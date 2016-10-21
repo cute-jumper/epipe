@@ -1,7 +1,7 @@
 #+TITLE: epipe
 
 Use your favorite editor in the pipeline, featuring the support for
-=emacsclient=.
+=emacsclient=. It works on =bash= and =zsh=. Other shells are not tested.
 
 This tool enables the use of emacs(client) for interactive editing of the
 output/input of shell commands.
@@ -32,15 +32,16 @@ output/input of shell commands.
 
 * References
   This idea has been implemented in =vipe=, but none of the current
-  implementation supports =emacsclient=.
+  implementation supports =emacsclient= in *zsh*. (Thanks @skeeto for correcting
+  me here)
 
   - [[https://joeyh.name/code/moreutils/][vipe of moreutils]]: To the best of my knowledge, the original =vipe= is
     implemented by Joey Hess using perl. But it doesn't support using
-    =emacsclient= as the editor.
+    =emacsclient= as the editor in *zsh*.
   - [[https://github.com/juliangruber/vipe/][juliangruber/vipe]]: I found this repo after I wrote the code. This one is
     similar to =epipe= since the author also rewrote the original =vipe= of Joey
     Hess using shell script. However, the problem remains the same -- it doesn't
-    support =emacsclient=.
+    support =emacsclient= in *zsh*.
 
 * Perl Version
   I also put a modified verion of Joey's =vipe= in this repo: =epipe.pl=. The
