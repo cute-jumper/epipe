@@ -16,9 +16,10 @@ output/input of shell commands.
   commands. The use of =epipe= can also replace some other interactive commands,
   for example, the interactive grep, [[https://github.com/mooz/percol][percol]].
 
-  You need to set either =EDITOR= or =VISUAL= environment variable. By default,
-  =epipe= uses =emacs= as the editor. You can set ~export EDITOR="emacsclient
-  -ct"~ in order to use =emacsclient= as the editor.
+  You need to set either =EDITOR= or =VISUAL= environment variable. If you don't
+  set =EDITOR= or =VISUAL=, =epipe= uses =emacs= as the default editor. In order
+  to use =emacsclient= as the editor, you can set =EDITOR= environment variable:
+  : export EDITOR="emacsclient -ct"
 
   A really simple example:
   [[./epipe.gif]]
